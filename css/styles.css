@@ -6,7 +6,7 @@
     --ftr-cont-txt: rgba(255, 255, 255, 0.6);
     --sol-bcg: #2F303A;    
     --team-bcg: #F5F4FA;    
-    } 
+    }
 
 .body{
     font-family: 'Roboto', sans-serif;
@@ -17,6 +17,8 @@
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -24,6 +26,18 @@
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6,p,ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid orange;
+}
 /*--header--*/
 
 .header {
@@ -84,6 +98,8 @@
 
 .solutions {
     background-color: var(--sol-bcg);
+    text-align: center;
+    margin-bottom: 94px;
 
 }
 
@@ -95,27 +111,36 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;    
         color: var(--act-btn-txt);
+        margin-bottom: 30px;
 }
 
 .solutions-button {        
         font-weight: 700;
         font-size: 16px;
-        line-height: calc(30/16);
-        display: flex;
-        align-items: center;
-        text-align: center; 
-        color: var(--act-btn-txt);       
+        line-height: calc(30/16);                 
+        color: var(--act-btn-txt);      
         background: var(--act-link-txt);
         cursor: pointer;
+        display: inline-block;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        min-width: 200px;       
+        padding: 10px 32px;
+        text-align: center;
 }
 
 /*--benefits--*/
+
+.benefits {
+    margin-bottom: 94px;
+}
 
 .benefits-title{
     font-weight: 700; 
     font-size: 14px;   
     line-height: calc(16/14);    
     text-transform: uppercase;
+    margin-bottom: 10px;
     }
 
 .benefits-text {       
@@ -125,38 +150,46 @@
 
 /*--doing--*/
 
+.doing {
+    margin-bottom: 188px;
+}
+
 .doing-title {
         font-weight: 700;
         font-size: 36px;
         line-height: calc(42/36);
-        text-align: center;            
+        text-align: center;
+        margin-bottom: 50px;           
 }
 
 /*--team--*/
 
 .team {
     background-color: var(--team-bcg);
+    margin-bottom: 94px;
+    text-align: center;
 }
 
 .team-title {
         font-weight: 700;
         font-size: 36px;
-        line-height: calc(42/36);
-        text-align: center;            
+        line-height: calc(42/36);        
+        padding-top: 94px;
+        padding-bottom: 50px;           
 }
 
 .team-m-title {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .team-text {    
     font-size: 16px;
-    line-height: calc(19/16);
-    text-align: center;    
+    line-height: calc(19/16);        
     color: var(--hd-cont-txt);
+    /*text-align: center;*/
 }
 
 /*--portfolio--*/
@@ -167,7 +200,13 @@
     line-height: calc(26/16);
     text-align: center;
     background: var(--team-bcg);
-    cursor: pointer;   
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+    text-align: center;
 }
 
 .portfolio-button:hover,

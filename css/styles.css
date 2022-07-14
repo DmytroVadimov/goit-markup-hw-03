@@ -41,11 +41,11 @@ margin-bottom: 0;
 /*--header--*/
 
 .header {
-    background: var(--act-btn-txt);
+    background: var(--act-btn-txt);    
 }
 
-.header-link.current {
-    color: var(--act-link-txt);
+.header-menu {
+    display: flex;    
 }
 
 .header-logo {
@@ -70,6 +70,13 @@ margin-bottom: 0;
         padding-bottom: 25px;
 }
 
+.header-m-item {
+    display: block;
+    /*padding-top: 32px;
+    padding-bottom: 32px;*/
+    margin-right: 50px;
+}
+
 .header-link {
         font-weight: 500;
         line-height: calc(16/14);
@@ -77,6 +84,11 @@ margin-bottom: 0;
         color: var(--pas-txt);
         padding-top: 32px;
         padding-bottom: 32px;
+        
+}
+
+.header-link.current {
+    color: var(--act-link-txt);
 }
 
 .header-link:hover,
@@ -84,13 +96,17 @@ margin-bottom: 0;
     color: var(--act-link-txt);
 }
 
+
+
+.header-m-item:last-child {
+    margin-right: 0;
+}
+
 .header-mail, .header-tel {
         font-weight: 500;        
         line-height: calc(16/14);
         letter-spacing: 0.02em; 
-        color: var(--hd-cont-txt);
-        padding-top: 32px;
-        padding-bottom: 32px;
+        color: var(--hd-cont-txt);        
         }
 
 .header-mail:hover,
@@ -98,6 +114,11 @@ margin-bottom: 0;
 .header-mail:focus,
 .header-tel:focus {
     color: var(--act-link-txt);
+}
+
+.header-c-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /*--main--*/
@@ -132,7 +153,8 @@ margin-bottom: 0;
         display: inline-block;
         border: 1px solid transparent;
         border-radius: 4px;
-        min-width: 200px;       
+        width: 200px;
+        height: 50px;     
         padding: 10px 32px;
         text-align: center;
 }
@@ -250,6 +272,8 @@ margin-bottom: 0;
 
 .footer {
     background-color: var(--sol-bcg);
+    
+    
 }
 
 .footer-logo {
@@ -258,7 +282,7 @@ margin-bottom: 0;
         font-size: 26px;
         line-height: calc(31/26);
         color: var(--act-btn-txt);
-        padding-top: 60px;
+        padding-top: 60px;        
         margin-bottom: 20px;
 }
 
@@ -296,8 +320,7 @@ margin-bottom: 0;
 .footer-tel {        
         line-height: calc(24/14);            
         color: rgba(255, 255, 255, 0.6);
-        padding-bottom: 60px;
-        
+        padding-bottom: 60px;        
 }
 
 .footer-mail:hover,

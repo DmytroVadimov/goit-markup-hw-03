@@ -50,7 +50,8 @@ img {
 /*--header--*/
 
 .header {
-    background: var(--act-btn-txt);      
+    background: var(--act-btn-txt);
+    border: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -58,41 +59,33 @@ img {
     align-items: center;
 }
 
-.header-logo {        
-        /*max-height: 80px;
-        margin-left: 215px;*/
+.header-logo {
+        display: flex;
+        align-items: center;       
+        max-height: 80px;
         margin-right: 93px;
-                    
+        padding-top: 24px;
+        padding-bottom: 25px;            
 
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: calc(31/26);          
-        color: var(--pas-txt);
-        
-        outline: 2px solid orange;
+        color: var(--pas-txt);        
     }
 
-.header-logo-blue {        
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/6);        
+.header-logo-blue {
         color: var(--act-link-txt);        
         }
 
 .header-menu {
     display: flex;
-    align-items: center;
+    align-items: center;      
 }
 
 .header-m-item {    
     margin-right: 50px;
-    max-height: 80px;
-    
-    outline: 2px solid orange;
 }
 
 .header-m-item:last-child {
@@ -122,16 +115,12 @@ img {
 
 .header-contact {
     display: flex;
-    align-items: center;    
-}
-
-.header-c-item {
-    max-height: 80px;    
+    align-items: center;
+    margin-left: auto;    
 }
 
 .header-c-item:not(:last-child) {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-right: 50px;
 }
 
 .header-mail,
@@ -143,10 +132,8 @@ img {
         font-weight: 500;        
         line-height: calc(16/14);
         letter-spacing: 0.02em; 
-        color: var(--hd-cont-txt);
-        
-        outline: 2px solid orange;
-        }    
+        color: var(--hd-cont-txt);        
+    }    
 
 .header-mail:hover,
 .header-tel:hover,

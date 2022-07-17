@@ -47,14 +47,14 @@ img {
     outline: 2px solid orange;
 }
 
-/*--header--*/
+/*------------------------header-------------------------*/
 
 .header {
     background: var(--act-btn-txt);
     border: 1px solid #ECECEC;
-}
+    }
 
-.header .container {
+.header .container { 
     display: flex;
     align-items: center;
 }
@@ -142,14 +142,15 @@ img {
     color: var(--act-link-txt);
 }
 
-/*--main--*/
+/*------------------------main------------------------*/
 
-/*--solutions--*/
+/*------------solutions------------*/
 
 .solutions {
     background-color: var(--sol-bcg);    
     margin-bottom: 94px;
     text-align: center;
+    
 
 
 }
@@ -170,14 +171,11 @@ img {
 
 .solutions-button {
         display: inline-block;
-        /* align-items: center;*/
-        text-align: center;
         border-radius: 4px;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         width: 200px;
         height: 50px;     
-        padding: 10px 32px;
-        margin-bottom: 200px;
+        margin-bottom: 200px;        
     
         font-weight: 700;
         font-size: 16px;
@@ -188,7 +186,7 @@ img {
         
 }
 
-/*--benefits--*/
+/*------------benefits-------------*/
 
 .benefits {
     margin-bottom: 94px;
@@ -196,6 +194,14 @@ img {
 
 .benefits-menu {
     display: flex;
+}
+
+.benefits-m-item {
+    margin-right: 30px;
+}
+
+.benefits-m-item:last-child {
+    margin-right: 0;
 }
 
 .benefits-title{
@@ -211,7 +217,7 @@ img {
     color: var(--hd-cont-txt);
 }
 
-/*--doing--*/
+/*------------doing------------*/
 
 .doing {
     margin-bottom: 188px;    
@@ -229,7 +235,15 @@ img {
         margin-bottom: 50px;           
 }
 
-/*--team--*/
+.doing-item {
+    margin-right: 30px;
+}
+
+.doing-item:last-child {
+    margin-right: 0;
+}
+
+/*------------team------------*/
 
 .team {
     background-color: var(--team-bcg);
@@ -277,7 +291,7 @@ img {
     background: var(--team-bcg);
     cursor: pointer;
     display: inline-block;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 4px;
     min-width: 73px;
     padding: 6px 22px;
@@ -309,7 +323,7 @@ img {
         color: var(--hd-cont-txt);
 }
 
-/*--footer--*/
+/*------------------------footer------------------------*/
 
 .footer {
     background-color: var(--sol-bcg);
@@ -318,6 +332,7 @@ img {
 }
 
 .footer-logo {
+        display: inline-block;
         font-family: "Raleway";
         font-weight: 700;
         font-size: 26px;
@@ -333,37 +348,40 @@ img {
         font-size: 26px;
         line-height: calc(31 / 26);
         letter-spacing: 0.03em;
-        color: var(--act-link-txt);
-        padding-top: 60px;
-        margin-bottom: 20px;
+        color: var(--act-link-txt);        
 }
 
 .footer-address {
-    font-style: normal;
+    font-style: normal;    
+}
+
+.footer-m-item {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-m-item:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 60px;
 }
 
 .footer-map {    
     line-height: calc(24/14);
-    color: var(--act-btn-txt);
-    margin-bottom: 9px;
-}
-
-.footer-map:hover,
-.footer-map:focus {
-    color: var(--act-link-txt);
+    color: var(--act-btn-txt);    
 }
 
 .footer-mail {
     line-height: calc(24/14);
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
-}
-.footer-tel {        
-        line-height: calc(24/14);            
-        color: rgba(255, 255, 255, 0.6);
-        padding-bottom: 60px;        
+    color: rgba(255, 255, 255, 0.6);    
 }
 
+.footer-tel {        
+        line-height: calc(24/14);            
+        color: rgba(255, 255, 255, 0.6);                
+}
+
+.footer-map:hover,
+.footer-map:focus
 .footer-mail:hover,
 .footer-tel:hover,
 .footer-mail:focus,

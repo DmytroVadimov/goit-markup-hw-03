@@ -4,7 +4,8 @@
     --act-btn-txt: #FFFFFF;
     --hd-cont-txt: #757575;
     --ftr-cont-txt: rgba(255, 255, 255, 0.6);
-    --sol-bcg: #2F303A;    
+    --sol-bcg: #2F303A;
+    --hero-bcg: #E5E5E5;
     --team-bcg: #F5F4FA;    
     }
 
@@ -50,8 +51,8 @@ img {
 /*------------------------header-------------------------*/
 
 .header {
-    background: var(--act-btn-txt);
     border: 1px solid #ECECEC;
+    background: var(--act-btn-txt);    
     }
 
 .header .container { 
@@ -147,12 +148,9 @@ img {
 /*------------solutions------------*/
 
 .solutions {
-    background-color: var(--sol-bcg);    
     margin-bottom: 94px;
     text-align: center;
-    
-
-
+    background-color: var(--sol-bcg);
 }
 
 .solutions-title {
@@ -190,6 +188,7 @@ img {
 
 .benefits {
     margin-bottom: 94px;
+    border-color: var(--hero-bcg);
 }
 
 .benefits-menu {
@@ -220,7 +219,9 @@ img {
 /*------------doing------------*/
 
 .doing {
-    margin-bottom: 188px;    
+    margin-bottom: 188px;
+    border-color: var(--hero-bcg);
+        
 }
 
 .doing-menu {
@@ -246,9 +247,10 @@ img {
 /*------------team------------*/
 
 .team {
-    background-color: var(--team-bcg);
     margin-bottom: 94px;
     text-align: center;
+    background-color: var(--team-bcg);
+    
 }
 
 .team-menu {
@@ -281,21 +283,39 @@ img {
     padding-bottom: 30px;
 }
 
-/*--portfolio--*/
+/*------------portfolio------------*/
+
+.portfolio {
+    border-color: var(--hero-bcg);
+}
+
+.portfolio-b-item {
+    display: inline-block;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-right: 8px;    
+}
+
+.portfolio-b-item:last-child {
+    margin-right: 0;
+}
 
 .portfolio-button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-    text-align: center;
-    background: var(--team-bcg);
-    cursor: pointer;
     display: inline-block;
     border: 1px solid transparent;
     border-radius: 4px;
     min-width: 73px;
     padding: 6px 22px;
     text-align: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    background: var(--team-bcg);
+    cursor: pointer; 
+    
+    outline: 2px solid orange;   
 }
 
 .portfolio-button:hover,
@@ -304,10 +324,7 @@ img {
     color: var(--act-btn-txt);
 }
 
-.portfolio-b-item {
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
+
 
 .portfolio-title {
         font-weight: 700;

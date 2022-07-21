@@ -266,15 +266,16 @@ img {
     }
 
 .team-title {
-        margin-bottom: 50px;
+    margin-bottom: 50px;
 
-        font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42/36);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
     }
 
-.team-img {
-    margin-bottom: 30px;
+.team-member {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-m-title {
@@ -308,22 +309,20 @@ img {
 }
 
 .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--hero-bcg);    
 }
 
 .portfolio-b {
-    display: flex;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    display: flex;    
     justify-content: center;
+    margin-bottom: 50px;
 }
 
-.portfolio-b-item {
-    margin-right: 8px;        
-}
-
-.portfolio-b-item:last-child {
-    margin-right: 0;
+.portfolio-b-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio-button {
@@ -370,12 +369,13 @@ img {
     margin-bottom: 0;
 }
 
-.portfolio-m-img {
-    margin-bottom: 20px;
+.portfolio-m-project {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
-.portfolio-m-title {
-        margin-left: 24px;
+.portfolio-m-title {        
         margin-bottom: 4px;
         
         font-weight: 700;
@@ -386,9 +386,6 @@ img {
 }
 
 .portfolio-m-text {
-        margin-left: 24px;
-        margin-bottom: 20px;
-
         font-size: 16px;
         line-height: calc(30/16);           
         color: var(--hd-cont-txt);
@@ -397,20 +394,22 @@ img {
 /*------------------------footer------------------------*/
 
 .footer {
-    background-color: var(--sol-bcg);
-    
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--sol-bcg);    
 }
 
 .footer-logo {
-        display: inline-block;
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
-        color: var(--act-btn-txt);
-        padding-top: 60px;        
-        margin-bottom: 20px;
+    margin-bottom: 20px;
+
+    display: inline-block;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    color: var(--act-btn-txt);
+        
 }
 
 .footer-logo-blue {
@@ -428,13 +427,11 @@ img {
 
 .footer-m-item {
     display: block;
-    margin-bottom: 9px;
-}
+    }
 
-.footer-m-item:last-child {
-    margin-bottom: 0px;
-    padding-bottom: 60px;
-}
+.footer-m-item:not(:last-child) {
+    margin-bottom: 9px;
+}   
 
 .footer-map {    
     line-height: calc(24/14);

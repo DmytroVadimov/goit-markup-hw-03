@@ -9,20 +9,12 @@
     --team-bcg: #F5F4FA;    
     }
 
-.body {
-    font-family: 'Raleway', 'Roboto', 'sans-serif';
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--pas-txt);
     background-color: var(--act-btn-txt);    
-}
-
-.list {    
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -40,14 +32,20 @@ img {
     display: block;
 }
 
+.list {    
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
-    /* outline: 2px solid orange; */
-}
+    }
 
 /*------------------------header-------------------------*/
 
@@ -157,9 +155,7 @@ img {
 
 .solutions-title {
         margin-bottom: 30px;
-        /* padding-right: 452px;
-        padding-left: 452px; */
-        
+                
         font-weight: 900;
         font-size: 44px;
         line-height: calc(60/44);        
@@ -366,8 +362,6 @@ img {
 }
 
 .portfolio-m-project {
-    /* display: flex;
-    flex-direction: column; */
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -377,10 +371,6 @@ img {
     border-bottom: 1px solid #EEEEEE;
 
 }
-
-/* .portfolio-m-project>.portfolio-m-title {
-    flex-grow: 1;
-} */
 
 .portfolio-m-title {
         margin-bottom: 4px;
